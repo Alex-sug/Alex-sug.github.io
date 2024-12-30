@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chewing gun</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="js/jquery.min.js"></script>
+    <style>
+      .aphe-img {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .aphe-img img {
+        width: 255px;
+        transform: rotate(-90deg);
+      }
+
+      .apple {
+        width: 160px;
+        animation: rotate1 4s infinite linear;
+        position: absolute;
+        bottom: 0;
+        left: 120px;
+      }
+
+      .shupian {
+        position: absolute;
+        width: 110px;
+        bottom: 22px;
+        position: absolute;
+        left: 15px;
+      }
+
+      .kxt {
+        position: absolute;
+        width: 125px;
+        /* bottom: 10px;
+        right: 20px; */
+        animation: rotate1 5s infinite linear, radom_pages 50s linear infinite;
+      }
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @keyframes radom_pages {
+        0% {
+          top: 0;
+          right: 0;
+        }
+        10% {
+          top: 10%;
+          right: 30%;
+        }
+        20% {
+          top: 50%;
+          right: 60%;
+        }
+        30% {
+          top: 68%;
+          right: 79%;
+        }
+
+        40% {
+          top: 85%;
+          right: 85%;
+        }
+
+        50% {
+          top: 50%;
+          right: 95%;
+        }
+
+        60% {
+          top: 30%;
+          right: 80%;
+        }
+
+        60% {
+          top: 15%;
+          right: 65%;
+        }
+        70% {
+          top: 0%;
+          right: 40%;
+        }
+        80% {
+          top: 20%;
+          right: 40%;
+        }
+        90% {
+          top: 40%;
+          right: 25%;
+        }
+
+        100% {
+          top: 0%;
+          right: 0%;
+        }
+      }
+
+      .aphe-imgs {
+        padding: 50px;
+      }
+      .aphe-imgs img {
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="aphe-imgs">
+        <img src="images/kxt/en.png" alt="" />
+      </div>
+      <!-- <div class="aphe-img">
+        <img src="images/kxt/A.png" alt="" />
+        <img src="images/kxt/P.png" style="margin-left: -120px" alt="" />
+        <img
+          src="images/kxt/H.png"
+          style="margin-left: -140px; transform: rotate(-102deg)"
+          alt=""
+        />
+        <img src="images/kxt/E.png" style="margin-left: -120px" alt="" />
+        <img src="images/kxt/S.png" style="margin-left: -120px" alt="" />
+        <img
+          src="images/kxt/I.png"
+          style="margin-left: -120px; width: 285px"
+          alt=""
+        />
+        <img src="images/kxt/V.png" style="margin-left: -120px" alt="" />
+        <img src="images/kxt/E.png" style="margin-left: -120px" alt="" />
+      </div> -->
+      <a href="apple.html"
+        ><img src="images/apple.png" class="apple" alt=""
+      /></a>
+
+      <a href="javascript:history.back();"
+        ><img src="images/kxt.png" class="kxt" alt=""
+      /></a>
+      <a href="potato-chips.html"
+        ><img src="images/shupian.png" class="shupian" alt=""
+      /></a>
+    </div>
+
+    <audio src="images/kxt/kxt_mp3.m4a" class="kxt_mp3"></audio>
+    <script>
+      let mp3Is = true;
+
+      $(".aphe-imgs").on("click", function () {
+        $(".kxt_mp3")[0].src = mp3Is
+          ? "images/kxt/kxt_mp3.m4a"
+          : "images/kxt/kxt_mp3_2.m4a";
+        mp3Is = !mp3Is;
+        $(".kxt_mp3")[0].play();
+      });
+    </script>
+  </body>
+</html>

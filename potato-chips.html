@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>potato chips</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/shupian.css" />
+    <script src="js/jquery.min.js"></script>
+    <style>
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <section style="transform: scale(1.6)">
+        <div class="shupian-a">
+          <img src="images/D.png" alt="" name="d" />
+          <img
+            src="images/R.png"
+            style="transform: translateY(8px)"
+            alt=""
+            name="r"
+          />
+          <img
+            src="images/Y.png"
+            style="transform: translateY(21px)"
+            alt=""
+            name="y"
+          />
+        </div>
+        <div class="shupian-a shupian-a2">
+          <img src="images/C.png" alt="" name="c" />
+          <img src="images/R.png" alt="" name="r" />
+          <img src="images/I.png" alt="" name="i" />
+          <img
+            src="images/S.png"
+            alt=""
+            name="s"
+            style="transform: translateY(-20px)"
+          />
+          <img
+            src="images/P.png"
+            alt=""
+            name="p"
+            style="transform: translateY(-20px)"
+          />
+        </div>
+      </section>
+      <a href="chewing-gum.html"
+        ><img src="images/kxt.png" style="width: 100px" class="kxt" alt=""
+      /></a>
+      <a href="apple.html"
+        ><img src="images/apple.png" alt="" class="apple"
+      /></a>
+      <a href="index.html"
+        ><img src="images/shupian.png" class="shupian-icon shupian" alt="" />
+      </a>
+      <audio src="images/mp3.mp3" id="audio"></audio>
+    </div>
+    <script>
+      let clickIndex = 0;
+      $(".shupian-a img").click(function () {
+        $('.shupian-a img').map((imgIndex,imgItem)=>{
+          $('.shupian-a img')[imgIndex].src="images/" +$('.shupian-a img')[imgIndex].getAttribute('name') +'.png';
+          // $(imgItem).attr('src',"images/sp" + $(imgItem).attr("name") + ".png")
+        })
+        $(this).attr("src", "images/sp" + $(this).attr("name") + ".gif");
+        $("#audio")[0].play();
+        setTimeout(() => {
+          if (clickIndex == 2) {
+            window.location.href = "./potato-chips-all.html";
+          }
+          clickIndex++;
+        }, 3200);
+      });
+    </script>
+  </body>
+</html>

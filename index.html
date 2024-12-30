@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chewphonia</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/home.css" />
+    <script src="js/jquery.min.js"></script>
+    <style>
+        .home-img {
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper" style="text-align: center">
+      <a href="apple.html"
+        ><img src="images/apple.png" class="apple" alt="" style="width: 280px"
+      /></a>
+      <img src="images/home.png" class="home-img" alt="" />
+      <a href="chewing-gum.html"
+        ><img src="images/kxt.png" class="kxt" alt="" style="width: 130px"
+      /></a>
+      <a href="potato-chips.html"
+        ><img
+          src="images/shupian.png"
+          class="shupian"
+          alt=""
+          style="width: 180px"
+      /></a>
+      <div class="scroll_text">
+        <div class="scroll_contact">
+          <span>
+            The most common trigger sound for misophonia is chewing
+            noise.Chewing sounds are based on forur distinct sound production
+            principles.They are typically categorized into three types:dry
+            crisp,wet crisp,and adhesive.
+          </span>
+        </div>
+      </div>
+      <!-- <div id="gongao" class="marquee-wrap">
+            <div class="scroll_div">
+                <pre class="scroll_begin">
+                    The most common trigger sound for misophonia is chewing noise.Chewing sounds are based on forur distinct sound production principles.They are typically categorized into three types:dry crisp,wet crisp,and adhesive.
+                </pre>
+                <pre class="scroll_end" style="display:none;"></pre>
+            </div>
+        
+        </div> -->
+    </div>
+  </body>
+  <script>
+    // 点击英文跳转页面
+    $(".home-img").on("click", function () {
+        location.href='./above.html'
+    });
+
+    const scroll_contact = $(".scroll_text .scroll_contact")[0];
+    scroll_contact.innerHTML += scroll_contact.innerHTML;
+    scroll_contact.innerHTML += scroll_contact.innerHTML;
+    $(".scroll_contact").css(
+      "width",
+      `${$(".scroll_text .scroll_contact span")[0].offsetWidth * 2 + "px"}`
+    );
+  </script>
+  <script>
+    var scroll_div = document.getElementsByClassName("scroll_div")[0];
+    var scroll_begin = document.getElementsByClassName("scroll_begin")[0];
+    var scroll_end = document.getElementsByClassName("scroll_end")[0];
+    if (scroll_begin && scroll_begin.offsetWidth > scroll_div.offsetWidth) {
+      ScrollImgLeft();
+      scroll_end.style.display = "inline-block";
+    }
+    // 文字横向滚动
+    function ScrollImgLeft() {
+      var speed = 50; // 滚动速度
+      var MyMar = null; // 计时器
+      scroll_end.innerText = scroll_begin.innerText;
+      function Marquee() {
+        if (scroll_end.offsetWidth - scroll_div.scrollLeft <= 0) {
+          scroll_div.scrollLeft -= scroll_begin.offsetWidth;
+        } else {
+          scroll_div.scrollLeft++;
+        }
+      }
+      MyMar = setInterval(Marquee, speed);
+    }
+    ScrollImgLeft();
+  </script>
+</html>

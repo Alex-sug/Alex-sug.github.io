@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>potato chips</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/shupian.css" />
+    <script src="lib/jquery2.min.js"></script>
+    <style>
+      #pd_container {
+        height: 100%;
+      }
+
+      #pd_container img {
+        width: 150px;
+      }
+
+      .pd_photo {
+        position: absolute;
+      }
+
+      .shupian {
+        position: absolute;
+        top: 0;
+        right: 0;
+        animation: rotate1 4s infinite linear;
+      }
+
+      .shupian-other {
+        /* position: absolute; */
+        bottom: 0;
+      }
+
+      .shupian-other img {
+        width: 160px;
+      }
+
+      .shupian {
+        position: absolute;
+        width: 140px;
+        z-index: 999;
+        animation: rotate1 6s infinite linear, radom_pages 40s linear infinite;
+      }
+      .kxt {
+        margin-top: -100px;
+        position: absolute;
+      }
+      .pd_photo img {
+        transform: scale(1.8);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <a href="javascript:history.back();"
+        ><img src="images/shupian.png" class="shupian" alt=""
+      /></a>
+      <section id="pd_container">
+        <div class="pd_photo">
+          <img src="images/Q.png" style="width: 120px" />
+        </div>
+        <div class="pd_photo"><img src="images/W.png" /></div>
+        <div class="pd_photo">
+          <img src="images/R.png" style="width: 115px" />
+        </div>
+        <div class="pd_photo"><img src="images/E.png" /></div>
+        <div class="pd_photo">
+          <img src="images/T.png" style="width: 120px" />
+        </div>
+        <div class="pd_photo">
+          <img src="images/Y.png" style="width: 200px" />
+        </div>
+        <div class="pd_photo"><img src="images/U.png" /></div>
+        <div class="pd_photo">
+          <img src="images/I.png" style="width: 120px" />
+        </div>
+        <div class="pd_photo"><img src="images/O.png" /></div>
+        <div class="pd_photo">
+          <img src="images/P.png" style="width: 50px" />
+        </div>
+        <div class="pd_photo">
+          <img src="images/A.png" style="width: 120px" />
+        </div>
+        <div class="pd_photo">
+          <img src="images/S.png" style="width: 110px" />
+        </div>
+        <div class="pd_photo">
+          <img src="images/D.png" style="width: 90px" />
+        </div>
+        <div class="pd_photo">
+          <img src="images/F.png" style="width: 50px" />
+        </div>
+        <div class="pd_photo">
+          <img src="images/G.png" style="width: 200px" />
+        </div>
+        <div class="pd_photo">
+          <img src="images/H.png" style="width: 100px" />
+        </div>
+        <div class="pd_photo"><img src="images/J.png" /></div>
+        <div class="pd_photo">
+          <img src="images/K.png" style="width: 90px" />
+        </div>
+        <div class="pd_photo">
+          <img src="images/L.png" style="width: 78px" />
+        </div>
+        <div class="pd_photo"><img src="images/M.png" /></div>
+        <div class="pd_photo">
+          <img src="images/N.png" style="width: 90px" />
+        </div>
+        <div class="pd_photo"><img src="images/B.png" /></div>
+        <div class="pd_photo">
+          <img src="images/V.png" style="width: 200px" />
+        </div>
+        <div class="pd_photo"><img src="images/C.png" /></div>
+        <div class="pd_photo"><img src="images/X.png" /></div>
+        <div class="pd_photo">
+          <img src="images/Z.png" style="width: 90px" />
+        </div>
+      </section>
+      <div class="shupian-other">
+        <a href="chewing-gum.html"
+          ><img src="images/kxt.png" class="kxt" style="width: 100px" alt=""
+        /></a>
+        <a href="apple.html"
+          ><img src="images/apple.png" class="apple" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <script src="lib/jquery-ui.min.js"></script>
+
+    <script src="lib/jquery.transform-0.6.2.min.js"></script>
+
+    <script src="lib/jquery.animate-shadow-min.js"></script>
+
+    <script src="lib/PhotoDesk.js"></script>
+  </body>
+</html>

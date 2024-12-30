@@ -1,0 +1,43 @@
+.shupian-a {
+  width: 1000px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.shupian-a2 {
+  margin-top: -100px;
+}
+.shupian-a img {
+  width: 255px;
+  margin-left: -100px;
+  margin: 0 -60px;
+}
+.shupian-c {
+  /* position: absolute;
+    width:100%;
+    bottom: 0;
+    left: 0; */
+}
+.apple {
+  width: 160px;
+  bottom: 0;
+  position: absolute;
+  left: 120px;
+  animation: rotate1 6s infinite linear;
+}
+.shupian {
+  position: absolute;
+  right: 0;
+  width: 140px;
+  top: 0;
+  animation: rotate1 6s infinite linear, radom_pages 40s linear infinite;
+  bottom: 0;
+}
+.kxt {
+  margin-top: -100px;
+  bottom: 0;
+  position: absolute;
+  bottom: -5px;
+  left: 28px;
+}
+

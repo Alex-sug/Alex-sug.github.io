@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>apple</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/apple.css" />
+    <style>
+      .wrapper .col_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        padding: 25px 0;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      .wrapper ul {
+        display: flex;
+        align-items: center;
+        width: max-content;
+      }
+      .wrapper ul li {
+        width: 240px;
+      }
+
+      .wrapper ul:nth-child(odd) {
+        animation: scrolls 30s 2s linear infinite;
+      }
+      .wrapper ul:nth-child(even) {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        transform: translateX(calc(-100% + 100vw));
+        animation: scrolls2 30s 2s linear infinite;
+      }
+
+      .wrapper ul:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes scrolls {
+        to {
+          transform: translateX(-50%);
+        }
+      }
+
+      @keyframes scrolls2 {
+        to {
+          transform: translateX(calc(-50% + 100vw));
+        }
+      }
+    </style>
+    <script src="js/jquery.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper" style="padding: 0">
+      <img
+        class="big-img big-img1"
+        name="2"
+        alt=""
+        src="images/apple/apple-picture13.png"
+      />
+
+      <a href="potato-chips.html"
+        ><img src="images/shupian.png" class="shupian small-img3" alt=""
+      /></a>
+
+      <a href="chewing-gum.html"
+        ><img src="images/kxt.png" class="kxt small-img3" alt=""
+      /></a>
+      <a class="floating-apple"
+        ><img src="images/apple.png" class="apple small-img3" alt=""
+      /></a>
+      <img src="images/apple/apple-gif.gif" class="apple-gif" alt="" />
+      <div class="col_box">
+        <ul id="scroller">
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture1.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture2.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture3.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture4.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture5.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture6.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture7.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture8.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture9.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture10.png"
+              alt="Firehouse"
+            />
+          </li>
+        </ul>
+        <ul id="scroller2">
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture11.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture12.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture13.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture14.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture15.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture16.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture17.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture18.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture19.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture20.png"
+              alt="Firehouse"
+            />
+          </li>
+        </ul>
+        <ul id="scroller3">
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture21.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture22.png"
+              alt="Firehouse"
+            />
+          </li>
+
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture24.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture25.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture26.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture27.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture28.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture29.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture30.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture31.png"
+              alt="Firehouse"
+            />
+          </li>
+        </ul>
+        <ul id="scroller4">
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture1.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture2.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture3.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture4.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture5.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture6.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture7.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture8.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture9.png"
+              alt="Firehouse"
+            />
+          </li>
+          <li>
+            <img
+              class="apple-eat"
+              src="images/apple/apple-picture10.png"
+              alt="Firehouse"
+            />
+          </li>
+        </ul>
+      </div>
+      <audio src="images/apple/app1.mp3" id="audio"></audio>
+    </div>
+  </body>
+
+  <script>
+    $(function () {
+      $(".wrapper .col_box ul").map((index, item) => {
+            const lis = item.querySelectorAll('li');
+            lis.forEach(li => {
+                const clonedLi = li.cloneNode(true);
+                
+                item.appendChild(clonedLi);
+            });
+        });
+    });
+  </script>
+
+  <script>
+    let apple_is = false;
+    $(".col_box").click(function () {
+      apple_is = true;
+      $(".big-img1").show();
+      $("ul").hide();
+      // $('.small-img3').show()
+    });
+
+    let big_index = 0;
+    let dataArr = [
+      { mp3: "1", img: "images/apple/apple-picture9.png" },
+      { mp3: "3", img: "images/apple/apple-picture12.png" },
+      { mp3: "4", img: "images/apple/apple-picture13.png" },
+      { mp3: "3", img: "images/apple/apple-picture7.png" },
+    ];
+    let newDataArr = dataArr.sort(() => Math.random() - 0.5);
+
+    $(".big-img").click(function () {
+      $(".big-img")[0].src = newDataArr[big_index].img;
+
+      $("#audio").attr(
+        "src",
+        "images/apple/app" + newDataArr[big_index].mp3 + ".mp3"
+      );
+      $("#audio")[0].play();
+      if (big_index >= newDataArr.length-1) {
+        setTimeout(() => {
+          $(".apple-gif").show();
+        }, 0);
+        return;
+      }
+      big_index++;
+    });
+    $(".big-img5").click(function () {
+      $(".big-img").hide();
+    });
+
+    $(".floating-apple").on("click", function () {
+      if (apple_is) {
+        apple_is = false;
+        location.href = "./apple.html";
+      } else {
+        location.href = "./index.html";
+      }
+    });
+  </script>
+</html>

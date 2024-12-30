@@ -1,0 +1,43 @@
+.tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
+  cursor: pointer;
+}
+
+.r-b {
+  opacity: 0;
+}
+.tab ul {
+  min-width: 25%;
+}
+.tab p,
+.tab a,
+.r-a {
+  color: #fff;
+  font-size: 16px;
+}
+
+.tab ul:hover .r-b {
+  opacity: 1;
+}
+.txt {
+  color: #fff;
+  margin-top: 80px;
+
+  width: 34%;
+  font-size: 1em;
+}
+.txt p {
+  color: #fff;
+  line-height: 28px;
+  line-height: 1.45;
+}
+.title {
+  margin-top: 20px;
+}
+.tab2 {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
