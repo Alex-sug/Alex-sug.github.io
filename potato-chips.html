@@ -67,7 +67,7 @@
       let clickIndex = 0;
       $(".shupian-a img").click(function () {
         $('.shupian-a img').map((imgIndex,imgItem)=>{
-          $('.shupian-a img')[imgIndex].src="images/" +toLowerCase($('.shupian-a img')[imgIndex].getAttribute('name')) +'.png';
+          $('.shupian-a img')[imgIndex].src="images/" + $('.shupian-a img')[imgIndex].getAttribute('name').toLowerCase() +'.png';
           // $(imgItem).attr('src',"images/sp" + $(imgItem).attr("name") + ".png")
         })
         $(this).attr("src", "images/sp" + $(this).attr("name") + ".gif");
